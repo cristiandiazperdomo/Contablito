@@ -6,7 +6,7 @@ let total = 0;
 let purchase = 0;
 let sale = 0;
 
-const URL_GET = "https://git.heroku.com/sleepy-wave-43629.git"
+const URL_GET = "https://sleepy-wave-43629.herokuapp.com/product"
 
 const getProductData = async (event) => {
 	event.preventDefault()
