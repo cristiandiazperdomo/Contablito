@@ -47,6 +47,7 @@ body{
 						}
 
 	.container{
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -57,10 +58,15 @@ body{
 		width: 60%;
 	
 	}
+	.sendProductData{
+		display: inline-block;
+		margin: 0 50px;
+	}
 		.articleCreateProduct{
 			display: flex;
 			justify-content: flex-start;
-			width: 60%;
+			width: 100%;
+			margin: 0 50px;
 		}
 			form{
 
@@ -86,6 +92,7 @@ body{
 		}
 			.tableProductInfo{
 				 border-collapse: collapse;
+				 margin: 20px 0; 
 				 border: 1px solid #000;
 			}
 				tr{
@@ -105,9 +112,9 @@ body{
 						}
 
 		.prices{
-			padding: 20px;
-			margin: 0 auto;
-			width: 500px;
+
+			margin: 20px auto;
+			width: 100%;
 			display: inline;
 		}
 
@@ -122,7 +129,6 @@ body{
 				margin: 0 auto;
 			}
 				tr th{
-					
 					padding: 5px;
 				}
 					tr td{
@@ -133,15 +139,23 @@ body{
 					}
 }
 
-@media all and (max-width: 600px) {
+
+@media all and (max-width: 550px) {
 	.sendProductData{
 		display: none;
 	}
-		.prices{
-			margin: 0 auto;
-			width: 400px;
-			display: inline;
-			
+		.tableProductInfo{
+			display: none;
 		}
-}
+		tr th{
+			padding: 0px;
+			margin: 0;
+		}
 
+			.prices{
+				margin: 0 auto;
+				width: 100%;
+				display: inline;
+						
+			}
+}
