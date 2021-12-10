@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" integrity="sha512-rQgMaFKZKIoTKfYInSVMH1dSM68mmPYshaohG8pK17b+guRbSiMl9dDbd3Sd96voXZeGerRIFFr2ewIiusEUgg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+	<header>
+		<h1>Contablito</h1>
+		<nav>
+			<ul>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="container">
+		<article class="articleCreateProduct">
+			<form name="sendProductData" class="sendProductData">
+				<div class="form_elements">
+					<label for="inputProductName">Descripción:
+						<input type="text" name="productName" id="inputProductName">
+					</label>
+				</div>
+				<div class="form_elements">
+					<label for="inputTypePurchase">Tipo de Compra: 
+						<input type="radio" name="typeTransaction" id="inputTypePurchase" value="Compra" checked>
+						Compra
+					</label>
+					<label for="inputTypeSale">
+						<input type="radio" name="typeTransaction" id="inputTypeSale" value="Venta">
+						Venta
+					</label>
+				</div>
+				<div class="form_elements">
+					<label for="inputTypeIVABasic"> Tipo de IVA:
+						<input type="radio" name="inputTypeIVA" id="inputTypeIVABasic" value="22" checked>
+						Básico
+					</label>
+					<label for="inputTypeIVAMinimum">
+						<input type="radio" name="inputTypeIVA" id="inputTypeIVAMinimum" value="10">
+						Mínimo
+					</label>
+					<label for="inputTypeIVAExempt">
+						<input type="radio" name="inputTypeIVA" id="inputTypeIVAExempt" value="0">
+						Exento
+					</label>
+				</div>
+				<div class="form_elements special">
+					<label for="inputProductPrice">Subtotal:</label>
+					<input type="text" name="inputProductPrice" id="inputProductPrice">
+				</div>
+				<div class="form_elements special">
+					<button type="submit" id="submitButton">Ingresar</button>
+				</div>
+			</form>
+		</article>
+		<article class="articlesProductInfo">
+			<table class="tableProductInfo">
+				<thead>
+					<tr>
+						<th>Descripción</th>
+						<th>Tipo</th>
+						<th>Subtotal($)</th>
+						<th>IVA($))</th>
+						<th>Total (IVA inc)</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="tbody">
+				</tbody>
+			</table>
+			<label class="prices">Total Compra:
+				<p class="totalPricePurchase">0</p>
+			</label>
+			<label class="prices">Total Venta:
+				<p class="totalPriceSale">0</p>
+			</label>
+		</article>
+	</section>
+	<script type="text/javascript" src="JS/script.js"></script>
+</body>
+</html>
